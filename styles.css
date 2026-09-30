@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+
+.container {
+  width: min(92%, 900px);
+  margin: auto;
+}
+
+.header {
+  padding: 40px 0 30px;
+  text-align: center;
+  background: #1f2937;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.header p {
+  color: #9ca3af;
+  font-size: 18px;
+}
+
+.search-box {
+  margin: 30px 0 20px;
+}
+
+.search-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+#search {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #374151;
+  background: #1f2937;
+  color: white;
+  font-size: 16px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cat,
+.install {
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 16px;
+  background: #374151;
+  color: white;
+  font-size: 15px;
+}
+
+.cat.active {
+  background: #2563eb;
+}
+
+.install {
+  margin-top: 15px;
+  background: #16a34a;
+}
+
+.hidden {
+  display: none;
+}
+
+.results {
+  margin: 20px 0;
+  color: #9ca3af;
+}
+
+.cards {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 8px;
+  background: #374151;
+  color: #93c5fd;
+  font-size: 13px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.meta {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.go {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 0;
+  color: #9ca3af;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 30px 0;
+  text-align: center;
+  color: #9ca3af;
+  border-top: 1px solid #374151;
+}
