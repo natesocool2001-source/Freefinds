@@ -1,0 +1,10 @@
+{
+  "name": "FreeFinds",
+  "short_name": "FreeFinds",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "description": "Free offers, rewards, coupons and savings.",
+  "icons": []
+}
