@@ -1,45 +1,45 @@
 const offers = [
   {
-    title: "Free rewards account",
+    title: "Fetch Rewards",
     cat: "Rewards",
-    desc: "Create a free account and check the provider's current signup rewards and terms.",
-    meta: "No purchase required to browse",
-    url: "#"
+    desc: "Earn points from eligible receipts and other activities, then redeem points for gift cards.",
+    meta: "Free to join • Terms and eligibility apply",
+    url: "https://fetch.com/receipt-scanning"
   },
   {
-    title: "Digital coupons",
-    cat: "Coupons",
-    desc: "Look for digital coupons that can reduce the price of everyday purchases.",
-    meta: "Terms vary by store",
-    url: "#"
-  },
-  {
-    title: "Free samples",
-    cat: "Freebies",
-    desc: "Browse sample opportunities. Availability and shipping rules can change.",
-    meta: "Limited quantities may apply",
-    url: "#"
-  },
-  {
-    title: "Cashback opportunities",
+    title: "Ibotta Cashback",
     cat: "Cashback",
-    desc: "Find participating merchants and review the cashback rate before purchasing.",
-    meta: "Usually requires a qualifying purchase",
-    url: "#"
+    desc: "Browse cashback offers and earn rewards on qualifying purchases.",
+    meta: "Qualifying purchases required",
+    url: "https://ibotta.com/"
   },
   {
-    title: "Free local giveaways",
+    title: "Fetch Receipt Rewards",
     cat: "Freebies",
-    desc: "Check community giveaways and promotions. Never pay to enter a legitimate free giveaway.",
-    meta: "Location and eligibility vary",
-    url: "#"
+    desc: "Snap eligible receipts and earn points. Digital receipts may also qualify.",
+    meta: "Receipts required • Eligibility varies",
+    url: "https://fetch.com/receipt-scanning"
   },
   {
-    title: "Receipt rewards",
+    title: "Ibotta Receipt Cashback",
+    cat: "Cashback",
+    desc: "Add eligible offers, make a qualifying purchase, and submit your receipt through the Ibotta app.",
+    meta: "Qualifying purchase required",
+    url: "https://help.ibotta.com/hc/en-us/articles/360008461959-How-do-I-submit-a-receipt-for-cash-back"
+  },
+  {
+    title: "Fetch Play",
     cat: "Rewards",
-    desc: "Some services reward eligible receipt submissions. Read privacy and eligibility terms first.",
-    meta: "Eligibility varies",
-    url: "#"
+    desc: "Fetch offers points for completing eligible activities, including participating games.",
+    meta: "Offers and requirements vary",
+    url: "https://fetch.com/"
+  },
+  {
+    title: "Ibotta Online Shopping",
+    cat: "Coupons",
+    desc: "Browse participating retailers and review available cashback offers before shopping.",
+    meta: "Offers, exclusions and eligibility vary",
+    url: "https://help.ibotta.com/hc/en-us/articles/115006120327-How-do-I-earn-cash-back-on-Online-Shopping-offers"
   }
 ];
 
@@ -62,20 +62,12 @@ function render() {
       <h3>${o.title}</h3>
       <p>${o.desc}</p>
       <div class="meta">${o.meta}</div>
-      <a class="go" href="${o.url}" onclick="return demoLink(event)">View offer</a>
+      <a class="go" href="${o.url}" target="_blank" rel="noopener noreferrer">View offer</a>
     </article>
   `).join("");
 
   empty.classList.toggle("hidden", list.length !== 0);
   count.textContent = `${list.length} offer${list.length === 1 ? "" : "s"}`;
-}
-
-function demoLink(e) {
-  if (e.currentTarget.getAttribute("href") === "#") {
-    e.preventDefault();
-    alert("This is a starter placeholder. Real approved offer links will be added before launch.");
-    return false;
-  }
 }
 
 document.querySelectorAll(".cat").forEach(b =>
