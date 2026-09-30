@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="FreeFinds - free offers, rewards, coupons and savings.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>FreeFinds</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>FreeFinds</h1>
+      <p>Free offers, rewards, coupons and savings</p>
+
+      <button id="installBtn" class="install hidden">
+        Install FreeFinds
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="search-box">
+      <label for="search">Search offers</label>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search rewards, coupons, freebies..."
+        autocomplete="off"
+      >
+    </section>
+
+    <nav class="categories" aria-label="Categories">
+      <button class="cat active" data-cat="All">All</button>
+      <button class="cat" data-cat="Rewards">Rewards</button>
+      <button class="cat" data-cat="Coupons">Coupons</button>
+      <button class="cat" data-cat="Freebies">Freebies</button>
+      <button class="cat" data-cat="Cashback">Cashback</button>
+    </nav>
+
+    <div class="results">
+      <strong id="count">0 offers</strong>
+    </div>
+
+    <section id="cards" class="cards"></section>
+
+    <div id="empty" class="empty hidden">
+      <h2>No offers found</h2>
+      <p>Try a different search or category.</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>FreeFinds &copy; 2026</p>
+      <p>Always review eligibility and terms before using an offer.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
