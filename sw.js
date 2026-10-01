@@ -1,4 +1,4 @@
-const CACHE = "freefinds-v3";
+const CACHE = "freefinds-v4";
 
 const ASSETS = [
   "./",
