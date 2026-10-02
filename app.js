@@ -138,4 +138,4 @@ if (searchBox) {
   searchBox.addEventListener("input", render);
 }
 
-render();
+redocument.querySelector("#count").textContent = "JS IS RUNNING";
