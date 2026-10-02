@@ -81,8 +81,15 @@ const offers = [
     cat: "Coupons",
     desc: "Browse participating stores for available coupons and savings.",
     meta: "Offers and exclusions vary",
-    url: "https://www.rakuten.com/"
-  }
+    url: "https://www.rakuten.com/",    
+    {
+      title: "Maytag",
+      cat: "Appliances",
+      desc: "Shop Maytag appliances and current offers.",
+      meta: "Affiliae offer",
+      url: "https://click.linksynergy.com/link?id=6E2sSLEB1%2fA&offerid=1810948.537086757102962642234383&type=2&murl=https%3a%2f%2fwww.maytag.com%2fkitchen%2frefrigeration%2frefrigerators%2ftop-freezer%2fp.33-inch-wide-top-freezer-refrigerator-with-garage-mode-21-cu.-ft.mrtx5121tz.html"
+    }
+  }];
 ];
 
 const cards = document.querySelector("#cards");
