@@ -93,7 +93,7 @@ const offers = [
       url: "https://click.linksynergy.com/link?id=6E2sSLEB1%2fA&offerid=1810948.537086757102962642234383&type=2&murl=https%3a%2f%2fwww.maytag.com%2fkitchen%2frefrigeration%2frefrigerators%2ftop-freezer%2fp.33-inch-wide-top-freezer-refrigerator-with-garage-mode-21-cu.-ft.mrtx5121tz.html"
     }
   }];
-];
+
 
 const cards = document.querySelector("#cards");
 const empty = document.querySelector("#empty");
