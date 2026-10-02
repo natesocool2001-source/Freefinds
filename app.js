@@ -82,8 +82,11 @@ const offers = [
     desc: "Browse participating stores for available coupons and savings.",
     meta: "Offers and exclusions vary",
     url: "https://www.rakuten.com/",    
-    {
-      title: "Maytag",
+  },
+{
+     
+
+    title: "Maytag",
       cat: "Appliances",
       desc: "Shop Maytag appliances and current offers.",
       meta: "Affiliae offer",
